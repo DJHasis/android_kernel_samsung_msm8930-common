@@ -44,6 +44,13 @@
 #define PRI_SRC_SEL_HFPLL	1
 #define PRI_SRC_SEL_HFPLL_DIV2	2
 
+#define SECCLKAGD		BIT(4)
+#ifdef CONFIG_SEC_DEBUG_SUBSYS
+int boost_uv;
+int speed_bin;
+int pvs_bin;
+#endif
+
 #ifdef CONFIG_CPU_OVERCLOCK
 #ifdef CONFIG_CPU_UNDERCLOCK
 #define FREQ_TABLE_SIZE    44
